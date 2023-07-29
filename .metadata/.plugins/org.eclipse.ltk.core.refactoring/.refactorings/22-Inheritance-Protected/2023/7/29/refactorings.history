@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;23-Inheritance-Protected/src/account.model.child&apos;&#x0D;&#x0A;- Original project: &apos;23-Inheritance-Protected&apos;&#x0D;&#x0A;- Destination element: &apos;23-Inheritance-Protected/src/account.model.child&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     account.model.CurrentAccount.java&#x0D;&#x0A;     account.model.SavingAccount.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;account.model.child" element1="/src&lt;account.model{CurrentAccount.java" element2="/src&lt;account.model{SavingAccount.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1689579061933" units="2" version="1.0"/>
+</session>

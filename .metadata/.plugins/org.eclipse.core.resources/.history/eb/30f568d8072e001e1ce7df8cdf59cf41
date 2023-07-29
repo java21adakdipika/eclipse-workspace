@@ -1,0 +1,33 @@
+package assignments;
+
+import java.util.Random;
+
+public class WordGuesser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random random = new Random();
+		int randomIndex = random.nextInt(15)
+		String[] dictionary = {
+				"Aurionpro", //0
+				"TechLab", //1
+				"Javascript", //2
+				"Angular", //3
+				"ReactJS", //4
+				"DataBase", //5
+				"Fabulous", //6
+				"SpringBoot", //7
+				"Arrogant", //8
+				"Humanity", //9
+				"Ideology", //10
+				"Curiosity", //11
+				"Aquatic", //12
+				"Jupiter", //13
+				"Language", //14
+				"Programmer", //15
+				};
+		
+		String randomWord = dictionary[randon]
+	}
+
+}

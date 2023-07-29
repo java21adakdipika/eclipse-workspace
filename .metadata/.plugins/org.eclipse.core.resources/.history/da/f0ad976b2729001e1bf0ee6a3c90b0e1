@@ -1,0 +1,46 @@
+package assignments.test;
+
+import java.util.Scanner;
+
+import assignments.model.Customer;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Customer[] customers = new Customer[2];
+		
+		for (int i=0; i<customers.length; i++) {
+			takeCustomerValues(customers[i]);
+			
+			System.out.println("***********************");
+		}
+
+	}
+	
+	public static void takeCustomerValues(Customer customer) {
+		Scanner sc = new Scanner(System.in);
+		String emailFormat = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+		String emailId = null;
+		System.out.print("Enter ID: ");
+		int custId = sc.nextInt();
+		
+		System.out.print("Enter Name: ");
+		String name = sc.next();
+		
+		do {
+			System.out.print("Enter EmailID: ");
+			emailId = sc.next();
+		} while (!emailId.matches(emailFormat));
+		
+		
+		System.out.print("Enter Password: ");
+		String password = sc.next();
+		
+		customer = new Customer(custId, name, emailId, password);
+		System.out.println(customer);
+		
+	}
+
+}

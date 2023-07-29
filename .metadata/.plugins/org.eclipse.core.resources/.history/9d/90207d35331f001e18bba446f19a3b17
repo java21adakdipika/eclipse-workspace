@@ -1,0 +1,38 @@
+package numberGreeser;
+
+import java.util.Scanner;
+
+public class NumberGreeser {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int randomnumber = 35;
+		int rounds = 1;
+		int result = 0;
+		int number = 0;
+		
+		while (rounds<=6) {
+			System.out.println("Round " + rounds);
+			System.out.print("Enter a Number: ");
+			number = sc.nextInt();
+			if (number == randomnumber) {
+				result = 1;
+				break;
+			} else if (number < randomnumber) {
+				System.out.println("Number is low, Enter a Higher Number.");
+			} else if (number > randomnumber) {
+				System.out.println("Number is high, Enter a Smaller Number.");
+			} else {
+				System.out.println("Invalid Input :(");
+			}
+			rounds++;
+		}
+		
+		if (result==1) {
+			System.out.println("You win.");
+		} else {
+			System.out.println("You loose.");
+		}
+	}
+
+}

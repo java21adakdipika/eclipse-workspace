@@ -1,0 +1,66 @@
+package com.aurionpro.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ClassifyPlayer{
+	
+	public List<Player> getAListeners(List<Player> players) {
+//		
+//		int count = 0;
+//		for (Player player:players) {
+//			if (player.getMatches()>100 && (player.getRuns() > 5000 || player.getWickets()>150)) {
+//				count ++;
+//			}
+//		}
+		
+		List<Player> alisters = new ArrayList<>(); 
+		for (Player player:players) {
+			if (player.getMatches()>100 && (player.getRuns() > 5000 || player.getWickets()>150)) {
+				alisters.add(player);
+			}
+		}
+		
+		return alisters;
+	}
+	
+//	public Player[] getBListeners(Player[] players) {
+//		int count = 0;
+//		for (int i=0; i<players.length; i++) {
+//			if ((players[i].getMatches()>50 && players[i].getMatches()<=100) && ((players[i].getRuns() > 3000 && players[i].getRuns() <= 5000) || (players[i].getWickets()>75 && players[i].getWickets()<=150))) {
+//				count ++;
+//			}
+//		}
+//		
+//		Player[] blisters = new Player[count]; 
+//		for (int i=0, j=0; i<players.length; i++) {
+//			if ((players[i].getMatches()>50 && players[i].getMatches()<=100) && ((players[i].getRuns() > 3000 && players[i].getRuns() <= 5000) || (players[i].getWickets()>75 && players[i].getWickets()<=150))) {
+//				blisters[j] = players[i];
+//				j++;
+//			}
+//		}
+//		
+//		return blisters;
+//	}
+	
+//	public Player[] getCListeners(Player[] players) {
+//		int count = 0;
+//		for (int i=0; i<players.length; i++) {
+//			if (players[i].getMatches()<50 && (players[i].getRuns() < 3000 || players[i].getWickets()<150)) {
+//				count ++;
+//			}
+//		}
+//		
+//		Player[] clisters = new Player[count]; ; 
+//		for (int i=0, j=0; i<players.length; i++) {
+//			if (players[i].getMatches()<50 && (players[i].getRuns() < 3000 || players[i].getWickets()<150)) {
+//				clisters[j] = players[i];
+//				j++;
+//			}
+//		}
+//		
+//		return clisters;
+//	}
+	
+	
+}

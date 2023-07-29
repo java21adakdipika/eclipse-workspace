@@ -1,0 +1,14 @@
+package assignments;
+
+import java.util.Random;
+
+public class WordGuesser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random random = new Random();
+		int randomIndex = random.nextInt(20);
+		String randomWord = WordTool.getDictionary ();
+	}
+
+}

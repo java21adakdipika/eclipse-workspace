@@ -1,0 +1,10 @@
+package assignments;
+
+public class TicTacToe {
+	
+	char[][] board;
+    
+	board = new char[3][3];
+	
+
+}
